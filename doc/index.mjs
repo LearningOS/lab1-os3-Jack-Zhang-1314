@@ -9417,7 +9417,7 @@ message.assignment = {
 // console.log(message)
 
 // students' information
-const jsonFile = `${repoOwner}_${message.repoOwner}.json`
+const jsonFile = `${resReg}_${message.repoOwner}.json`
 
 try {
   await fs_promises__WEBPACK_IMPORTED_MODULE_0__.writeFile(jsonFile, JSON.stringify(message, null, 2))
