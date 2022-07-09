@@ -24,7 +24,7 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.OS_2022 }}
         with:
-          source_file: lab1_${{github.actor}}.json
+          source_file: lab1-os3_${{github.actor}}.json
           destination_repo: 'os2edu/grading'
           destination_folder: 'src/data'
           user_email: 'zyj17715640603@gmail.com'
