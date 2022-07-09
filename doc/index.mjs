@@ -9406,7 +9406,7 @@ if (!classOne) {
 // const resReg = message.repoName?.replace(/.*\/(.*?)\-.*/g, "$1")
 
 const repo = repoName.split("/")[1]
-const resReg = repo.slice(0, repo.length - 1 - process.env["GITHUB_SHA"].length)
+const resReg = repo.slice(0, repo.length - 1 - process.env["GITHUB_ACTOR"].length)
 
 message.assignment = {
   id: (0,uuid__WEBPACK_IMPORTED_MODULE_5__.v1)().split("-")[0],
@@ -9418,6 +9418,8 @@ message.assignment = {
 
 // students' information
 const jsonFile = `${resReg}_${message.repoOwner}.json`
+
+console.log(jsonFile)
 
 try {
   await fs_promises__WEBPACK_IMPORTED_MODULE_0__.writeFile(jsonFile, JSON.stringify(message, null, 2))
