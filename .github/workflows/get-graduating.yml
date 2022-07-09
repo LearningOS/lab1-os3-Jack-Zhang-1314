@@ -27,6 +27,6 @@ jobs:
           source_file: lab1_${{github.actor}}.json
           destination_repo: 'os2edu/grading'
           destination_folder: 'src/data'
-          user_email: 'zyj17715640603@gmail.com'
-          user_name: 'Jack-Zhang-1314'
+          user_email: 'seventanyb@gmail.com'
+          user_name: 'july-12'
           commit_message: 'A custom message for the commit'
