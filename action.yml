@@ -1,0 +1,15 @@
+# @format
+
+name: 'test one create issues'
+description: 'test create issues'
+inputs:
+  repoURL:
+    description: 'repo'
+    default: ${{github.repositoryUrl}}
+    required: false
+  token:
+    description: 'GITHUB TOKEN'
+    default: ${{github.token}}
+runs:
+  using: 'node16'
+  main: 'doc/index.mjs'
